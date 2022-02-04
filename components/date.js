@@ -1,6 +1,13 @@
-import { parseISO, format } from "date-fns";
+export default function MyDate({ date }) {
+  const getKorTimestamp = (timestamp) => {
+    const options = {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+    };
 
-export default function Date({ dateString }) {
-  const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, "LLLL d, yyyy")}</time>;
+    return new Date(timestamp).toLocaleString("ko-KR", options);
+  };
+
+  return <time dateTime={date}>{getKorTimestamp(date)}</time>;
 }
