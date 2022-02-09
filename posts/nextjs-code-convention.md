@@ -1,8 +1,15 @@
 ---
-title: '블로그 코드 컨벤션 설정'
+title: '블로그 코딩 컨벤션 설정'
 date: '2022-02-05 23:21:55'
 ---
+## 코딩 컨벤션
+- 읽고, 관리하기 쉬운 코드를 작성하기 위한 일종의 코딩 스타일 규약
+- 우리가 코딩을 하거나 협업을 할 때, 이해하기 쉽도록 가독성 높은 코드를 작성하기 위해 규칙을 정해놓는 것이라 생각함
+> [https://ui.toast.com/fe-guide/ko_CODING-CONVENTION](https://ui.toast.com/fe-guide/ko_CODING-CONVENTION)
+
 ## eslint
+- Javscript 에서 코드의 가독성을 높이기 위해 일관된 코드 스타일로 작성하게 도와줌
+- 문법 에러 검사 등
 ```
 {
   "env": {
@@ -54,7 +61,7 @@ date: '2022-02-05 23:21:55'
 ![babel_eslint_archived](/images/posts/babel_eslint_archived.png)
 
 ## prettier
-
+- 정해진 코딩 스타일을 따르도록 변환
 ```
 {
   "printWidth": 80,

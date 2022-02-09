@@ -3,7 +3,7 @@ import { TypographyStyle } from "react-typography";
 import typography from "../utils/typography";
 
 const MyDocument = () => (
-  <Html>
+  <Html lang="ko">
     <Head>
       <TypographyStyle typography={typography} />
     </Head>
