@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 
 const name = "hwanfront";
-export const siteTitle = "Next.js 테스트";
+export const siteTitle = "blog";
 
 const Layout = ({ children, home }) => {
   const header = home ? (

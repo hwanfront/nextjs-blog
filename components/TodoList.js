@@ -1,26 +1,17 @@
-import TestItem from "./TestItem";
+import TodoItem from "./TodoItem";
 import { useRecoilValue } from "recoil";
-import { testListState, testListSelector } from "./states";
+import { todoListSelector } from "./states";
 
-function Testlist() {
-  const testList = useRecoilValue(testListState);
-  const testListWithKorTimestamp = useRecoilValue(testListSelector);
+function TodoList() {
+  const todoListWithKorTimestamp = useRecoilValue(todoListSelector);
 
   return (
-    <>
-      <ul className="test">
-        {testList.map((x) => (
-          <TestItem key={x.id} {...x} />
-        ))}
-      </ul>
-      <br />
-      <ul className="test">
-        {testListWithKorTimestamp.map((x) => (
-          <TestItem key={x.id} {...x} />
-        ))}
-      </ul>
-    </>
+    <ul className="todo">
+      {todoListWithKorTimestamp.map((x) => (
+        <TodoItem key={x.id} {...x} />
+      ))}
+    </ul>
   );
 }
 
-export default Testlist;
+export default TodoList;
