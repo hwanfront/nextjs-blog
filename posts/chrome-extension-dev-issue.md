@@ -1,6 +1,6 @@
 ---
 title: 'Chrome Extension 개발 이슈'
-date: '2022-02-05 23:21:55'
+date: '2022-02-12 02:24:00'
 ---
 # Chrome Extension 개발 이슈
 ## Chrome Extension Architecture
