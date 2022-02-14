@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
-import ReactMarkdown from "react-markdown";
+import Markdown from "../../components/Markdown/Markdown";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.scss";
 
@@ -34,7 +34,7 @@ const Post = ({ postData }) => (
       <div className={utilStyles.lightText}>
         <Date date={postData.date} />
       </div>
-      <ReactMarkdown>{postData.content}</ReactMarkdown>
+      <Markdown>{postData.content}</Markdown>
     </article>
   </Layout>
 );
