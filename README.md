@@ -1,1 +1,2 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# blog
+## (ui)[https://www.figma.com/file/vPQfHiL53d2ZSjkX3wgt7T/Untitled?node-id=0%3A1]
