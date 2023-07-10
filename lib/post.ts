@@ -26,5 +26,8 @@ export const getPosts = () => {
 }
 
 export const getPostById = async (id: string) => {
-
+  const filePath = path.join(POST_DIRECTORY, `${id}.md`);
+  const post = fs.readFileSync(filePath, 'utf-8');
+  const { content, data: frontMatter } = matter(post);
+  return { id, content, frontMatter };
 }
