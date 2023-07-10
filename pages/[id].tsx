@@ -1,3 +1,4 @@
+import { convertMarkdownToHTML } from "@/lib/html";
 import { getPostById, getPostPaths } from "@/lib/post";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
@@ -51,7 +52,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params!;
-  const post = await getPostById(id?.toString() || '');
+  const {content, frontMatter} = await getPostById(id?.toString() || '');
+  const post = { frontMatter, content: await convertMarkdownToHTML(content) };
   return { props: { post } };
 }
 
