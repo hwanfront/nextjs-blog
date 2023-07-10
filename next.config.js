@@ -1,7 +1,7 @@
-const path = require("path");
-
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, "./pages")],
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  swcMinify: true,
+  reactStrictMode: true,
 };
+
+module.exports = nextConfig;
